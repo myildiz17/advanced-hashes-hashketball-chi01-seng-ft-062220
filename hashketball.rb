@@ -1,4 +1,5 @@
-# Write your code below game_hash
+
+require 'pry'# Write your code below game_hash
 def game_hash
   {
     home: {
@@ -129,6 +130,7 @@ end
 
 def all_players
   game_hash[:home][:players].merge(game_hash[:away][:players])
+  binding.pry
 end
 
 def get_team(team)
