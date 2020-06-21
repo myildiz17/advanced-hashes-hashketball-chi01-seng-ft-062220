@@ -133,8 +133,10 @@ def all_players
   all={}
   game_hash[:home][:players].each do |player|
   all<<player
+end
   game_hash[:away][:players].each do |player|
   all<<player
+end
 
   binding.pry
 end
@@ -151,6 +153,7 @@ end
 def player_numbers(team)
   get_team(team)[:players].map do |player|
     player[:number]
+  end
 end
 
 def num_points_scored(player)
