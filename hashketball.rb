@@ -1,3 +1,4 @@
+require 'pry'
 # Write your code below game_hash
 def game_hash
   {
@@ -125,5 +126,34 @@ def game_hash
     }
   }
 end
+
+
+def all_players
+  game_hash[:home][:players].merge(game_hash[:away][:players])
+end
+
+def get_team(team)
+  case team
+  when game_hash[:home][:team_name]
+    game_hash[:home]
+  when game_hash[:away][:team_name]
+    game_hash[:away]
+  end
+end
+
+def num_points_scored(player)
+  all_players[:players][:score]
+  binding.pry 
+end
+
+def player_numbers(team)
+  get_team(team)[:players].map do |player|
+    player[:number]
+  end
+end
+
+
+
+
 
 # Write code here
