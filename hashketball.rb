@@ -158,9 +158,3 @@ def num_points_scored(player)
   all_players[:player][:score]
 
 end
-
-
-
-
-
-# Write code here
