@@ -130,7 +130,11 @@ end
 
 
 def all_players
-  game_hash[:home][:players].merge(game_hash[:away][:players])
+  all={}
+  game_hash[:home][:players].each do |player|
+  all<<player
+  game_hash[:away][:players].each do |player|
+  all<<player
 end
 
 def get_team(team)
