@@ -1,5 +1,6 @@
 
-require 'pry'# Write your code below game_hash
+require 'pry'
+# Write your code below game_hash
 def game_hash
   {
     home: {
