@@ -151,7 +151,6 @@ end
 def player_numbers(team)
   get_team(team)[:players].map do |player|
     player[:number]
-  end
 end
 
 def num_points_scored(player)
