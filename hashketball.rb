@@ -135,6 +135,8 @@ def all_players
   all<<player
   game_hash[:away][:players].each do |player|
   all<<player
+
+  binding.pry
 end
 
 def get_team(team)
