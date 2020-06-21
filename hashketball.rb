@@ -1,4 +1,3 @@
-require 'pry'
 # Write your code below game_hash
 def game_hash
   {
@@ -128,7 +127,7 @@ def game_hash
 end
 
 
-def all_players
+def all_players 
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
 
@@ -141,11 +140,6 @@ def get_team(team)
   end
 end
 
-def num_points_scored(player)
-  all_players[:players][:score]
-  binding.pry 
-end
-
 def player_numbers(team)
   get_team(team)[:players].map do |player|
     player[:number]
@@ -153,6 +147,7 @@ def player_numbers(team)
 end
 
 
+     
 
 
 
